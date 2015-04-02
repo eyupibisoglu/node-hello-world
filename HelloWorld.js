@@ -2,8 +2,10 @@
 
 var express = require('express'); 
 var app = express(); 
-app.get('/', function(req, res)
+
+app.get('/', function(request, response)
 { 
 	res.send('Hello World'); 
-}).listen(3000); 
+}); 
 
+app.listen(3000);
